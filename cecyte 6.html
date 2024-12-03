@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CECYTE 6</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fdfdfd; 
+        }
+
+        @keyframes complexEntrance {
+            0% {
+                opacity: 0;
+                transform: rotate(-360deg) scale(0.3) translateX(-100%);
+                filter: blur(10px);
+            }
+            50% {
+                opacity: 0.5;
+                transform: rotate(0deg) scale(1.1) translateX(0);
+                filter: blur(0);
+            }
+            100% {
+                opacity: 1;
+                transform: rotate(360deg) scale(1) translateX(0);
+                filter: blur(0);
+            }
+        }
+
+        .logo {
+            animation: complexEntrance 4s ease-in-out;
+            transform-origin: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 15px rgb(255, 255, 255); 
+            border: 3px solid #ecf0f1; 
+            border-radius: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="cecyte.png" alt="Logo CECyTE Puebla Xicotepec">
+    </div>
+</body>
+</html>
